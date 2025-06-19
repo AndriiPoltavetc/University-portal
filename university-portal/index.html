@@ -3,60 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Головна - НУПП</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- jQuery & jQuery UI -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-
-  <!-- Custom CSS -->
+  <title>Головна – Полтавська політехніка</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Шапка сайту -->
-  <header class="bg-dark text-white p-3 d-flex justify-content-between align-items-center">
-    <img src="https://portal.nupp.edu.ua/icon.png" alt="Логотип" height="50">
-    <h1 class="h4 mb-0">Національний університет "Полтавська політехніка"</h1>
+  <!-- Шапка -->
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="https://portal.nupp.edu.ua/icon.png" alt="Логотип" style="height: 50px;" class="me-3">
+        <h1 class="h4 mb-0">Полтавська політехніка</h1>
+      </div>
+      <nav class="mt-3 mt-md-0">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Головна</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="about.html">Про сайт</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Галерея</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="news.html">Новини</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Меню -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Головна</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="about.html">Про сайт</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
-          <li class="nav-item"><a class="nav-link" href="news.html">Новини</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакти</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <!-- Головна частина -->
+  <main class="container mt-5">
+    <section class="mb-5">
+      <h1 class="mb-3">Національний університет "Полтавська політехніка імені Юрія Кондратюка"</h1>
+      <p>
+        Ласкаво просимо на офіційний інформаційний портал університету! Тут ви знайдете актуальні новини, оголошення, події, інформацію для абітурієнтів та студентів, а також матеріали щодо наукової та міжнародної діяльності закладу.
+      </p>
+      <p>
+        Полтавська політехніка — сучасний заклад вищої освіти, який поєднує традиції та інновації. Ми готуємо висококваліфікованих фахівців для ІТ, будівництва, нафтогазової галузі, економіки, гуманітарних наук та інших напрямків.
+      </p>
+    </section>
 
-  <!-- Новини -->
-  <section class="container mt-5">
-    <h2 class="mb-4">Останні новини</h2>
-    <div id="news-section" class="row"></div>
-  </section>
+    <section>
+      <h2 class="mb-4">Головні новини</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">1. Університет увійшов до топ-10 ЗВО України</h5>
+              <p class="card-text">НУПП визнано одним з найкращих технічних університетів за рейтингами якості освіти, наукової активності та партнерських програм.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">2. Відкрито сучасну лабораторію енергетики</h5>
+              <p class="card-text">Студенти та викладачі мають доступ до новітнього обладнання для досліджень в галузі енергоефективності та екології.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">3. Міжнародна угода з німецьким університетом</h5>
+              <p class="card-text">НУПП уклав договір про академічний обмін студентів і викладачів із Університетом прикладних наук Дрездена.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">4. Студенти перемогли на IT-олімпіаді</h5>
+              <p class="card-text">Наші студенти вибороли перше місце на міжнародному конкурсі зі штучного інтелекту серед команд Європи.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">5. Благодійний ярмарок зібрав 150 тис. грн</h5>
+              <p class="card-text">Університет провів ярмарок для збору допомоги постраждалим від війни. Участь взяли понад 100 студентів.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">6. Віртуальний тур для абітурієнтів</h5>
+              <p class="card-text">На порталі запущено інтерактивний 3D-тур корпусами та лабораторіями для ознайомлення вступників з університетом.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
 
   <!-- Футер -->
-  <footer class="bg-dark text-white text-center p-4 mt-5">
-    <p>© 2025 Національний університет "Полтавська політехніка". Усі права захищено.</p>
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container text-center">
+      &copy; 2025 Полтавська політехніка. Всі права захищено.
+    </div>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Скрипт новин -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
